@@ -47,7 +47,7 @@ const SideBar = () => {
 
 	const useStyles = makeStyles({
 		root: {
-			height: 216,
+			height: "100vh",
 			flexGrow: 1,
 			maxWidth: 400,
 			background: "#bdc3c7",
