@@ -56,7 +56,9 @@ const SideBar = () => {
 
 	const classes = useStyles();
 
-	const showData = () => {};
+	const showDataOnOther = (value) => {
+		return <DataShow>{value}</DataShow>;
+	};
 
 	return (
 		<socialDataContext.Provider value={socialDatas}>
@@ -70,6 +72,7 @@ const SideBar = () => {
 						<DataShow
 							data={socialDatas.History.ancient_india}></DataShow>
 					</TreeItem>
+
 					<TreeItem nodeId="3" label="modern_india">
 						<DataShow
 							data={socialDatas.History.modern_india}></DataShow>
